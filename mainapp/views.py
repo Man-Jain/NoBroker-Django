@@ -67,6 +67,10 @@ def tenant_enquiries(request):
 def tenant_property_page(request,user_id, property_id):
 	property_details = Properties.objects.get(pk=property_id)
 	return render(request,'tenant/property_details.html',{'property':property_details})
+@login_required
+def _enquiries(request):
+	enquiries = Enquiries.objects.filter(enquirer=request.user)
+	return render(request,'landlord/lenquiries.html',{'enquiries':enquiries})
 
 @login_required
 def send_enquiry(request, user_id, property_id):
