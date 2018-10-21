@@ -41,7 +41,7 @@ def calculate_property(request):
 			return render(request,'landlord/property.html',{'form':form})
 	form = PropertyRent()
 	return render(request,'landlord/property.html',{'form':form})
-
+#login
 @login_required
 def landlord_properties(request):
 	properties_list = Properties.objects.filter(pk=request.user.id)
