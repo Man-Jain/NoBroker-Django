@@ -5,8 +5,7 @@ The NoBroker site made in Django
 The first thing to do is to clone the repository:
 
 ```sh
-$ git clone https://github.com/gocardless/sample-django-app.git
-$ cd sample-django-app
+$ git clone https://github.com/Man-Jain/NoBroker-Django.git
 ```
 
 Create a virtual environment to install dependencies in and activate it:
